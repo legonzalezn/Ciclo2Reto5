@@ -34,14 +34,7 @@ public class Serie{
     @JoinColumn(name = "ser_id", referencedColumnName = "con_id")
     @OneToOne(fetch = FetchType.EAGER)
     Contenido contenido;
-/*
-    public Serie() {
-    }
-
-    public Serie(int id){
-        setSer_id(id);
-    }
-   */
+    
     @Override
     public String toString() {
         return "Serie{" + "ser_id=" + ser_id + ", ser_episodios=" + ser_episodios + ", ser_temporadas=" + ser_temporadas + ", contenido=" + contenido + '}';
